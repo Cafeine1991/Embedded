@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- Declare the version html -->
+<html>
+<head >
+    <title>Embeding</title>        
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD9/f0AAAAAAOzs7ADl5eUA/Pz8ACsZBgD+/v4AAwMDAPv7+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEWZmZmZmIxERZmZmZmZmERFmZmZmZmYREWZmZoZmZhERZmYUVmZmERFmYREWZmYREWYRERFmZhERZhYREXZmERFmZmYRZmYREWZmZhFmZhERZmZmERFmERFmZmYHEWYREWZmZmZmZhERZmZmZmZmERFmZmZmZmYREWZmZmZmZhHAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAA" rel="icon" type="image/x-icon" />
+    <style> 
+    body{
+        background-color: aqua;
+        display: grid;
+        place-items: center;
+    }
+    p{
+        /* font-size: 10px; */
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .line1{
+        border-radius: 10px;
+        color: darkgoldenrod;
+    }
+    .welcome{
+        border-radius: 30px;
+        border: 5px solid brown;
+    }
+    mark{
+        background-color: blue;
+        border-radius: 10px;
+        color: darkgoldenrod;
+    }
+    #title {
+        font-size: 32px;
+        color: dimgrey
+    }
+    b{
+        color: darkmagenta;
+        border-radius: 5px;
+        background-color: yellow;
+        border: 1px solid black;
+    }
+    #anh1
+    {display: block;margin-left: auto;
+        margin-right: auto;
+        width: 80%;height: 80%; border: 3px solid gray;}
+    h5{
+        color: chocolate;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+    }
+    .set-postion-video{
+        border-radius: 5px;
+        background-color: blue;
+        border: 2px solid black;
+        display: grid;
+        place-items: center;
+    }
+    </style>
+</head>
+    <body>
+        <div class="welcome">
+            <h1 class="line1"> Welcome to the <mark>Chill De Hoc</mark> website</h1>
+        </div>
+        <audio controls autoplay>
+            <source src="/EtTyEmEo/Cho-Toi-Lang-Thang-Ngot-Den.mp3">
+        </audio>
+        <h2 id="title">Lập trình nhúng - Embeding programming</h2>
+        <div>
+            <p>
+            <section><b id="definition" >Lập trình nhúng</b></section> -   Là một thuật ngữ lập trình dùng để chỉ một hệ thống có khả năng tự trị, nó được nhúng vào trong một hệ thống mẹ hay một môi trường nào đó. Đó là các hệ thống tích hợp phần mềm và phần cứng.
+            </p>
+        <img id="anh1" src="data:image/jpeg;base64,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" alt="Ảnh Chipset">
+        </div>
+        <div>
+            <h3><section id="whatIhave">Kỹ sư lập trình nhúng cần những gì?</section></h3>
+            <ul id="skill_embeding">
+                <ol>
+                    <h5>Về kiến thức căn bản</h5>
+                    <ul>
+                        <li>Bạn cần học lập trình C đến mức chuyên gia để có thể làm việc với hệ thống nhúng suôn sẻ hơn.</li>
+                        <li>Trau dồi kỹ năng tiếng anh để đọc được các tài liệu chuyên ngành, nhất là datasheet. </li>
+                        <li>Nẵm rõ các kiến thức về điện tử cũng như các kiến thức về vi điều khiển, ADC, kiến thức logic, TIMER, INTERRUPT,... </li>
+                        <li>Hiểu rõ về hệ điều hành như: kiến trúc của hệ điều hành, kiến trúc chính xác của máy tính và nhất là hệ điều hành linux.</li>
+                        <li>Nắm rõ mọi cấu trúc của dữ liệu và giải thuật để bản thân trở thành chuyên gia phần cứng, hiểu rõ code làm code chính xác. </li>
+                        <li>Học hỏi bổ sung kiến thức về các hệ điều hành thời gian thực. </li>
+                    </ul>
+                </ol>
+                <ol>
+                    <h5>Về Embedded software</h5>
+                    Bạn cần chú tâm học về lập trình ứng dụng C++, <a href="https://vi.wikipedia.org/wiki/Java_(ng%C3%B4n_ng%E1%BB%AF_l%E1%BA%ADp_tr%C3%ACnh)">Java</a>, lập trình device driver, biết lập trình web, lập trình android, nắm rõ về python, perl trong lập trình, cần học tập về cấu trúc dữ liệu cũng như cách xây dựng môi trường.
+                </ol>
+                <ol>
+                    <h5>Về Embedded hardware</h5>
+                    Học cách thiết kế PCB, xây dựng kiến thức điện tử thật tốt, biết cách test board, biết cách đánh giá review cũng như đánh giá để lựa chọn linh kiện cho dự án, chú ý sử dụng các loại dụng cụ máy đo, biết cách hàn mạch, sửa mạch,... 
+                </ol>
+                <ol>
+                    <h5>Với Internet of thing và bảo mật có trên IoT</h5>
+                    Hiện tại, IoT là một trong những xu hướng phát triển cực mạnh và nhanh chóng nên bạn bắt buộc phải trang bị các kiến thức sau để dùng chúng: 
+                    <ul>
+                        <li>Kiến thức về networking: Đây là kiến thức trọng tâm không thể thiếu, nó cho phép bạn làm IoT như: protocol, wifi, Bluetooth, Cellurla, RF,... </li>
+                        <li>Với Webserver: Bạn buộc phải nắm rõ cách thức hoạt động của webserver cũng như tìm cách ra lệnh cho bộ phần phần cứng làm việc từ internet và việc biết lập trình web cũng như android là điều bắt buộc. </li>
+                        <li>Hiểu rõ Cload để biết cách quản lý cũng như điều khiển thiết bị từ phía xa</li>
+                        <li>Với bảo mật trên thiết bị IoT: Hiện tại, các thiết bị IoT đang bị tấn công khá nhiều nên bạn cần phải có trách nhiệm giúp cho thiết bị sẽ được bảo mật tuyệt đối.</li>
+                    </ul>
+                </ol>
+            </ul>
+            <img src="https://d3hi6wehcrq5by.cloudfront.net/itnavi-blog/2021/01/L%E1%BA%ADp-tr%C3%ACnh-nh%C3%BAng-4.jpg" alt="Ảnh CPU">
+            <h6 id="dongduoianh"><i>Học lập trình nhúng có dễ không?</i></h6>
+        </div>
+        <section>
+        <div id="startlearn">
+            <h5>Học lập trình nhúng bắt đầu từ đâu là chuẩn?</h5>
+            Dưới đây là lộ trình học tập của một lập trình viên nhúng mà bạn bắt buộc phải vượt qua:</br>
+                <h5>Thứ 1:</h5>Bổ sung kiến thức và học về hệ điều hành linux, hay nói cách khác là bạn cần cài thêm một hệ điều hành linux mà mình thích rồi học nó.</br>
+                <h5>Thứ 2: </h5>Học về shell script và command line có trên linux.</br>
+                <h5>Thứ 3: </h5>Tìm hiểu kiến thức về cách boot hệ thống, load firmware và cách debug để sửa cũng như vá lỗi.</br>
+                <h5>Thứ 4:</h5>Biết cách build về hệ thống nhúng theo cách tốt nhất và thực hành thường xuyên về hệ điều hành ở trên một board.</br>
+                <h5>Thứ 5: </h5>Viết device driver để có thể giao tiếp với các ngoại vi. </br>
+                <h5>Thứ 6: </h5>Trực tiếp phát triển ứng dụng
+        </div>
+        </section>
+        <p> //////////// /////// / // / / // //</p>
+        <div id="purpose-embed">
+               <p>Mục đích chủ yếu lập trình nhúng chính là phục vụ các bài toán chuyên dụng trong các lĩnh vực công nghiệp, tự động hóa điều khiển và truyền tin. Thông thường, hệ thống nhúng sẽ được thiết kế để thực hiện các chức năng chuyên trách hoặc riêng biệt nào đó. </p> 
+        </div>
+        <ul>
+            Thành phần cơ bản của lập trình nhúng
+            <li><b>ROM</b>
+                </br>
+                Nó chứa chương trình, các dữ liệu được fix hoặc những constant data. Hiện nay, thì đa số các hệ thống này đều sử dụng EEPROM hoặc FLASH để thay thế cho ROM bởi vì: chúng có chức năng update chương trình mới, có khả năng ghi xóa. 
+            </li>
+            <li>
+                <b>RAM</b>
+            </br>
+            Đây là thành phần hỗ trợ lưu chương trình thực thi và các biến tạm.
+            </li>
+            <li>
+                Ngoài ra, còn một vài thiết bị ngoại vi khác như: ADC, DAC, I2C, UART, MCU,... 
+            </li>
+        </ul>
+        <div>
+            <h3>
+                Lập trình nhúng được ứng dụng ra sao?
+            </h3>
+            <ul>
+                <li>Lập trình nhúng được ứng dụng trong các ngành điện tử, viễn thông ngân hàng, máy tính,...
+                </li>
+                <li>Hệ thống này được tích hợp phần mềm và phần cứng cũng như được tích hợp 1 thiết bị lập trình thể hiện là một vi xử lý.</li>
+                <li>Hệ thống nhúng và PC có thiết bị cầm tay PDA và nó được xem là khác biệt do được thiết kế giúp chuyên biệt hóa các chức năng cụ thể. Từ đó, nâng cao chất lượng cho chính hệ thống giúp giảm thiểu được giá thành.</li>
+            </ul>
+        <div id="using">
+            <h3>Các ứng dụng của lập trình nhúng là gì?</h3>
+            <ul>
+                <li><a href="https://daynhauhoc.com/t/hoc-c-theo-huong-lap-trinh-nhung-la-nhu-the-nao/7685">Lập trình nhúng C++</a></li>
+                <li title="Iot là một trong những xu hướng phát triển cực nhanh và mạnh, nên bạn cần trang bị nó cho quá trình tìm hiểu công nghệ thông tin của mình.">Lập trình nhúng và iot</li>
+                <li title="Embedded sẽ giúp đội nhóm trong công ty phát triển phần mềm cho các sản phẩm nhúng và nó có thể là: application, firmware, OS, driver,..">Lập trình nhúng embedded</li>
+                <li>Lập trình nhúng với Python</li>
+                <li>Lập trình nhúng Arduino</li>
+                <li>Lập trình nhúng Linux</li>
+            </ul>
+        </div>
+        <div id="more">
+            Bạn đọc tham khảo thêm: </br>
+            <a href="https://itnavi.com.vn/blog/props-la-gi/">Props là gì? Hướng dẫn sử dụng Props trong Component</a>
+        </div>
+        <div class="specify">
+             <h3>Lập trình nhúng có những đặc điểm gì?</h3></br> 
+             <p>Nếu bạn chưa biết <a id="whatyouneed" href="#whatIhave"><b>một kỹ sư lập trình nhúng cần những gì</b></a> thì có điểm qua những đặc điểm của hệ thống nhúng ngay sau đây để hiểu rõ hơn.</p>
+             <ul>
+                 <li>Hệ thống nhúng là một trong những hệ thống chuyên dụng với khả  năng tự hành và thực hiện các thiết kế thích hợp vào một hệ thống lớn hơn. Từ đó, thực hiện được mọi chức năng chuyên biệt mà không đóng vai trò như một hệ thống máy tính đa chức năng. </li>
+                 <li>Thông thường, hệ thống nhúng thường không phải là khối riêng biệt mà là một trong những hệ thống phức tạp nằm trong những thiết bị chính nó điều khiển. Nó sẽ bao gồm các thiết bị phần cứng và phần mềm nên hầu hết bạn đều phải thỏa mãn yêu cầu hoạt động này trong khoảng thời gian thực. </li>
+                 <li>Dựa vào yêu cầu và tính chất thì một số hệ thống sẽ đòi hỏi có sự ràng buộc về tính hoạt động của thời gian thực để đảm bảo độ an toàn cũng như tính ứng dụng. Các hệ thống này thường không ràng buộc hoặc đòi hỏi phải chặt chẽ cũng như cho phép người sử dụng có thể đơn giản hóa d cho hệ thống phần cứng. Từ đó, giảm thiểu mọi chi phí liên quan đến sản xuất</li>
+                 <li>Bởi vì có tính chất chuyên biệt nên hệ thống nhúng thường được sản xuất với số lượng lớn. Bởi vậy, các yêu cầu chúng phải được tối ưu hóa để giảm kích thước và chi phí sản xuất cũng được hình thành. Một trong những yêu cầu này đã mang đến nhiều điểm khác biệt trong lĩnh vực viết phần mềm cho các hệ thống nhúng so với một số phần mềm thông thường khác. </li>
+             </ul>
+             <img src="https://d3hi6wehcrq5by.cloudfront.net/itnavi-blog/2021/01/L%E1%BA%ADp-tr%C3%ACnh-nh%C3%BAng-3.jpg" alt="Embedded Systems">
+             <h6 id="letterdown"><i>Đặc điểm của hệ thống nhúng</i></h6>
+        </div>
+        </div>
+        <div id="conclussion">
+            <h3>Tổng kết</h3>
+                <p>Khi đã đọc đến đây chắc chắn bạn đã hình dung ra được <a href="#definition"><b>lập trình nhúng là gì</b></a> cũng như <a href="#startlearn"><b>học lập trình nhúng bắt đầu từ đâu</b></a> rồi phải không nào? Hy vọng, với những kiến thức mà chúng tôi chia sẻ ở phía trên sẽ phần nào giúp bạn ứng dụng và học hỏi về hệ thống nhúng một cách dễ dàng hơn.</p>
+        </div>
+        <div class="set-postion-video">
+            <h5>Dưới đây là 1 ví dụ của nhúng (trong nền tảng web) </h5>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9YffrCViTVk?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </body>
+</html>
